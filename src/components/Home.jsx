@@ -1,3 +1,4 @@
+import { TypeAnimation } from 'react-type-animation'
 import heroImg from '../assets/tanvir2.png'
 
 function Home() {
@@ -17,7 +18,56 @@ function Home() {
 
           <h1>Tanvir Parvez Prottoy</h1>
 
-          <h2>Full Stack Developer</h2>
+          <h2>
+
+  <TypeAnimation
+
+    sequence={[
+
+      'Full Stack Developer',
+      2000,
+
+      'Frontend Developer',
+      2000,
+
+      'React.js Developer',
+      2000,
+
+      'Next.js Developer',
+      2000,
+
+      'UI / UX Designer',
+      2000,
+
+      'Research Enthusiast',
+      2000,
+
+      'OpenGL Graphics Designer',
+      2000,
+
+      'Flutter App Developer',
+      2000,
+
+      'REST API Integrator',
+      2000,
+
+      'Problem Solver',
+      2000,
+
+      'Creative Web Designer',
+      2000
+
+    ]}
+
+    wrapper="span"
+
+    speed={50}
+
+    repeat={Infinity}
+
+  />
+
+</h2>
 
           {/* <p>
             I build modern and responsive websites using

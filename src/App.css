@@ -81,6 +81,90 @@ body {
 
 
 /* =========================
+   PREMIUM MOBILE NAVBAR
+========================= */
+
+.menu-btn {
+    display: none;
+    font-size: 34px;
+    color: #38bdf8;
+    cursor: pointer;
+    z-index: 2000;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    transform: scale(1.08);
+}
+
+
+/* ===== MOBILE NAVBAR ===== */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 18px 20px;
+        position: relative;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .nav-right {
+        margin-left: auto;
+        margin-right: 18px;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 290px;
+        height: 100vh;
+        background: rgba(2, 8, 23, 0.97);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+        transition: 0.45s ease;
+        z-index: 1500;
+        padding: 50px 20px;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+    .nav-links li {
+        list-style: none;
+    }
+    .nav-links a {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+    .nav-links a:hover {
+        color: #38bdf8;
+    }
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .nav-links {
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.light-theme .nav-links a {
+    color: #0f172a;
+}
+
+.light-theme .nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================
    LOGO
 ========================= */
 
@@ -253,8 +337,9 @@ body {
 }
 
 .left h2 {
-    font-size: 52px;
+    font-size: 42px;
     margin-bottom: 20px;
+    min-height: 70px;
 }
 
 .left p {

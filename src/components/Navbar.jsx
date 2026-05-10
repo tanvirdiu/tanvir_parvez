@@ -1,6 +1,10 @@
+import { useState } from 'react'
+
 import logo from '../assets/logo.png'
 
 function Navbar({ darkMode, setDarkMode }) {
+
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
 
@@ -20,29 +24,112 @@ function Navbar({ darkMode, setDarkMode }) {
 
 
 
+      {/* ===== MOBILE MENU BUTTON ===== */}
+
+      <div
+        className="menu-btn"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+
+        {menuOpen ? '✕' : '☰'}
+
+      </div>
+
+
+
       {/* ===== NAV LINKS ===== */}
 
-      <ul className="nav-links">
+      <ul className={menuOpen ? "nav-links active" : "nav-links"}>
 
-        <li><a href="#home">Home</a></li>
+        <li>
+          <a
+            href="#home"
+            onClick={() => setMenuOpen(false)}
+          >
+            Home
+          </a>
+        </li>
 
-        <li><a href="#about">About</a></li>
+        <li>
+          <a
+            href="#about"
+            onClick={() => setMenuOpen(false)}
+          >
+            About
+          </a>
+        </li>
 
-        <li><a href="#services">Services</a></li>
+        <li>
+          <a
+            href="#services"
+            onClick={() => setMenuOpen(false)}
+          >
+            Services
+          </a>
+        </li>
 
-        <li><a href="#projects">Projects</a></li>
+        <li>
+          <a
+            href="#projects"
+            onClick={() => setMenuOpen(false)}
+          >
+            Projects
+          </a>
+        </li>
 
-        <li><a href="#timeline">Journey</a></li>
+        <li>
+          <a
+            href="#timeline"
+            onClick={() => setMenuOpen(false)}
+          >
+            Journey
+          </a>
+        </li>
 
-        <li><a href="#education">Education</a></li>
+        <li>
+          <a
+            href="#education"
+            onClick={() => setMenuOpen(false)}
+          >
+            Education
+          </a>
+        </li>
 
-        <li><a href="#certificates">Certificates</a></li>
+        <li>
+          <a
+            href="#certificates"
+            onClick={() => setMenuOpen(false)}
+          >
+            Certificates
+          </a>
+        </li>
 
-        <li><a href="#testimonials">Reviews</a></li>
+        <li>
+          <a
+            href="#testimonials"
+            onClick={() => setMenuOpen(false)}
+          >
+            Reviews
+          </a>
+        </li>
 
-        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a
+            href="#faq"
+            onClick={() => setMenuOpen(false)}
+          >
+            FAQ
+          </a>
+        </li>
 
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
+          </a>
+        </li>
 
       </ul>
 
