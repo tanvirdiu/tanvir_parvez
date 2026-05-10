@@ -1,0 +1,119 @@
+import logo from '../assets/logo.png'
+
+function Navbar({ darkMode, setDarkMode }) {
+
+  return (
+
+    <nav className="navbar">
+
+
+      {/* ===== LOGO ===== */}
+
+      <div className="logo">
+
+        <img
+          src={logo}
+          alt="logo"
+        />
+
+      </div>
+
+
+
+      {/* ===== NAV LINKS ===== */}
+
+      <ul className="nav-links">
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#services">Services</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#timeline">Journey</a></li>
+
+        <li><a href="#education">Education</a></li>
+
+        <li><a href="#certificates">Certificates</a></li>
+
+        <li><a href="#testimonials">Reviews</a></li>
+
+        <li><a href="#faq">FAQ</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+
+
+      {/* ===== RIGHT ===== */}
+
+      <div className="nav-right">
+
+
+        {/* ===== THEME TOGGLE ===== */}
+
+        <button
+          className={`theme-toggle ${darkMode ? 'active' : ''}`}
+          onClick={() => setDarkMode(!darkMode)}
+        >
+
+          <div className="toggle-circle">
+
+
+            {/* ===== MOON ===== */}
+
+            {darkMode ? (
+
+              <svg
+                className="toggle-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+
+                <path
+                  fill="currentColor"
+                  d="M21 12.79A9 9 0 0 1 11.21 3a7 7 0 1 0 9.79 9.79z"
+                />
+
+              </svg>
+
+            ) : (
+
+
+              /* ===== SUN ===== */
+
+              <svg
+                className="toggle-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+
+                <path
+                  fill="currentColor"
+                  d="M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12"
+                />
+
+                <path
+                  fill="currentColor"
+                  d="M12 2v2M12 20v2M4 12h2M18 12h2"
+                />
+
+              </svg>
+
+            )}
+
+          </div>
+
+        </button>
+
+      </div>
+
+    </nav>
+
+  )
+}
+
+export default Navbar
