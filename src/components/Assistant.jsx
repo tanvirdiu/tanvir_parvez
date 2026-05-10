@@ -1,3 +1,4 @@
+import { HiSparkles } from 'react-icons/hi'
 import { useState } from 'react'
 
 import axios from 'axios'
@@ -150,7 +151,7 @@ function Assistant() {
         onClick={() => setOpen(!open)}
       >
 
-        AI
+        <HiSparkles />
 
       </button>
 
