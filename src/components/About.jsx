@@ -19,61 +19,14 @@ function About() {
           I'm Tanvir Parvez. I build modern and responsive
           websites using React, JavaScript, HTML and CSS.
           I love creating beautiful UI designs and learning
-          new technologies every day.
+          new technologies every day. Also I’m a motivated and focused learner with a strong passion for technology and practical problem-solving. I enjoy exploring new
+tools, building my skills, and working with teams to deliver reliable, high-quality work. I believe in steady improvement, taking
+responsibility, and contributing to projects that create real impact. I possess a strong aptitude for rapidly mastering new
+technologies and adapting to dynamic environments, and I am eager to leverage my technical foundation to tackle complex
+challenges.
+
         </p>
-
-
-        <div className="progress-area">
-
-
-  <div className="progress-box">
-
-    <h4>React</h4>
-
-    <div className="progress-line">
-
-      <span style={{ width: "85%" }}>
-      </span>
-
-    </div>
-
-  </div>
-
-
-
-  <div className="progress-box">
-
-    <h4>CSS</h4>
-
-    <div className="progress-line">
-
-      <span style={{ width: "95%" }}>
-      </span>
-
-    </div>
-
-  </div>
-
-
-
-  <div className="progress-box">
-
-    <h4>JavaScript</h4>
-
-    <div className="progress-line">
-
-      <span style={{ width: "80%" }}>
-      </span>
-
-    </div>
-
-  </div>
-
-
-</div>
-
       </div>
-
     </section>
 
   )

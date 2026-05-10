@@ -1,22 +1,124 @@
+import { useRef } from 'react'
+
+import emailjs from '@emailjs/browser'
+
 function Contact() {
+
+  const form = useRef()
+
+
+  const sendEmail = (e) => {
+
+    e.preventDefault()
+
+
+    emailjs.sendForm(
+
+      'up_10',
+      'template_ov9ngfo',
+
+      form.current,
+
+      '5pi_LSSexw_S2kXAk'
+
+    )
+
+    .then(() => {
+
+      alert('Message Sent Successfully ✅')
+
+    })
+
+    .catch(() => {
+
+      alert('Something went wrong ❌')
+
+    })
+
+
+    e.target.reset()
+  }
+
 
   return (
 
-    <section className="contact" id="contact">
+    <section
+      className="contact"
+      id="contact"
+    >
 
-      {/* ===== SECTION TITLE ===== */}
+      {/* =========================
+          SECTION TITLE
+      ========================= */}
 
       <div className="section-title">
 
-        <h4>Contact Me</h4>
+        <h4>
+          Contact
+        </h4>
 
-        <h2>Let's Connect</h2>
+        <h2>
+          Send Me A Message
+        </h2>
 
       </div>
 
 
 
-      {/* ===== CONTACT CARDS ===== */}
+      {/* =========================
+          CONTACT FORM
+      ========================= */}
+
+      <div className="contact-form-wrapper">
+
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="contact-form"
+        >
+
+
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Your Name"
+            required
+          />
+
+
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Your Email"
+            required
+          />
+
+
+          <textarea
+            name="message"
+            placeholder="Write Your Message..."
+            rows="7"
+            required
+          >
+
+          </textarea>
+
+
+          <button type="submit">
+
+            Send Message
+
+          </button>
+
+        </form>
+
+      </div>
+
+
+
+      {/* =========================
+          CONTACT CARDS
+      ========================= */}
 
       <div className="contact-cards">
 
@@ -42,7 +144,9 @@ function Contact() {
 
           </div>
 
-          <h3>GitHub</h3>
+          <h3>
+            GitHub
+          </h3>
 
           <a
             href="https://github.com/tanvirdiu"
@@ -76,7 +180,9 @@ function Contact() {
 
           </div>
 
-          <h3>Facebook</h3>
+          <h3>
+            Facebook
+          </h3>
 
           <a
             href="https://www.facebook.com/tanvirparvez10/"
@@ -110,44 +216,12 @@ function Contact() {
 
           </div>
 
-          <h3>LinkedIn</h3>
+          <h3>
+            LinkedIn
+          </h3>
 
           <a
             href="https://www.linkedin.com/in/tanvir-parvez-8a3510242/"
-            target="_blank"
-          >
-            Visit Profile
-          </a>
-
-        </div>
-
-
-
-        {/* ===== BEHANCE ===== */}
-
-        <div className="contact-card">
-
-          <div className="contact-icon">
-
-            <svg
-              className="contact-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-
-              <path
-                fill="white"
-                d="M9.5 11.5s2-.2 2-2.5-1.6-3.5-3.7-3.5H0v13h7.8s4.2.1 4.2-3.8c0-3.9-2.5-3.7-2.5-3.7zm-2.1-3.7h1.1s1 0 1 1.1-.7 1.2-1.5 1.2H7.4V7.8zm1.3 7.2H7.4v-3h1.4s1.7 0 1.7 1.5-1.1 1.5-1.8 1.5zm6.8-6.6c-4 0-4 4-4 4s-.3 4 4 4c0 0 3.6.2 3.6-2.8h-1.9s.1 1.2-1.6 1.2c0 0-1.8.1-1.8-1.8h5.4s.6-4.6-3.7-4.6z"
-              />
-
-            </svg>
-
-          </div>
-
-          <h3>Behance</h3>
-
-          <a
-            href="https://www.behance.net/f59af084"
             target="_blank"
           >
             Visit Profile
@@ -178,7 +252,9 @@ function Contact() {
 
           </div>
 
-          <h3>Telegram</h3>
+          <h3>
+            Telegram
+          </h3>
 
           <a
             href="https://t.me/Tanvir_Parvez_10"
@@ -212,7 +288,9 @@ function Contact() {
 
           </div>
 
-          <h3>WhatsApp</h3>
+          <h3>
+            WhatsApp
+          </h3>
 
           <a
             href="https://wa.me/+8801786644744"
@@ -225,7 +303,7 @@ function Contact() {
 
 
 
-        {/* ===== GMAIL ===== */}
+        {/* ===== EMAIL ===== */}
 
         <div className="contact-card">
 
@@ -251,7 +329,9 @@ function Contact() {
 
           </div>
 
-          <h3>Email</h3>
+          <h3>
+            Email
+          </h3>
 
           <a
             href="mailto:prottoy15-5378@diu.edu.bd"

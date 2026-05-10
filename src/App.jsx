@@ -25,6 +25,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 import ScrollProgress from './components/ScrollProgress'
+import Skills from './components/Skills'
 
 
 
@@ -65,25 +66,13 @@ function App() {
       {/* ===== HOME ===== */}
 
       <Home />
-
-
       {/* ===== STATS ===== */}
-
       <Stats />
-
-
       {/* ===== ABOUT ===== */}
-
       <About />
-
-
+      <Skills />
       {/* ===== TECH MARQUEE ===== */}
-
-      
-
-
       {/* ===== SERVICES ===== */}
-
       <Services />
 
 

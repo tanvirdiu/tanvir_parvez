@@ -9,7 +9,7 @@ function Stats() {
 
         <div className="stat-box">
 
-          <h2>15+</h2>
+          <h2>20+</h2>
 
           <p>
             Projects Completed
@@ -33,7 +33,7 @@ function Stats() {
 
         <div className="stat-box">
 
-          <h2>10+</h2>
+          <h2>100+</h2>
 
           <p>
             UI Designs

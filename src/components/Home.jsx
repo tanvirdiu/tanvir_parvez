@@ -17,11 +17,11 @@ function Home() {
 
           <h1>Tanvir Parvez Prottoy</h1>
 
-          <h2>Frontend Developer</h2>
+          <h2>Full Stack Developer</h2>
 
           <p>
             I build modern and responsive websites using
-            React, JavaScript, HTML and CSS.
+            React, JavaScript, HTML and CSS. 
           </p>
 
 
