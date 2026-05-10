@@ -26,6 +26,8 @@ import Footer from './components/Footer'
 
 import ScrollProgress from './components/ScrollProgress'
 import Skills from './components/Skills'
+import Assistant from './components/Assistant'
+import VisitorCounter from './components/VisitorCounter'
 
 
 
@@ -68,6 +70,8 @@ function App() {
       <Home />
       {/* ===== STATS ===== */}
       <Stats />
+      <Assistant />
+      <VisitorCounter />
       {/* ===== ABOUT ===== */}
       <About />
       <Skills />

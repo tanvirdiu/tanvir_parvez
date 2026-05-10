@@ -42,19 +42,12 @@ function Home() {
       'Research Enthusiast',
       2000,
 
-      'OpenGL Graphics Designer',
-      2000,
-
-      'Flutter App Developer',
-      2000,
 
       'REST API Integrator',
       2000,
 
-      'Problem Solver',
-      2000,
 
-      'Creative Web Designer',
+      'Creative Web Developer',
       2000
 
     ]}

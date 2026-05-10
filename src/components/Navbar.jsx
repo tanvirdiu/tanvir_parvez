@@ -24,7 +24,7 @@ function Navbar({ darkMode, setDarkMode }) {
 
 
 
-      {/* ===== MOBILE MENU BUTTON ===== */}
+      {/* ===== MOBILE MENU ===== */}
 
       <div
         className="menu-btn"
