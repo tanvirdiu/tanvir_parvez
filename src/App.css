@@ -1801,26 +1801,6 @@ body {
 
 
 /* =========================
-   FOOTER
-========================= */
-
-.footer {
-    width: 100%;
-    padding: 30px 8%;
-    background: #020b16;
-    margin-top: 40px;
-}
-
-.footer-bottom {
-    text-align: center;
-}
-
-.footer-bottom p {
-    color: #94a3b8;
-}
-
-
-/* =========================
    SCROLLBAR
 ========================= */
 
@@ -1835,6 +1815,75 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #38bdf8;
     border-radius: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    position: relative;
+    margin-top: 120px;
+    padding: 45px 20px;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient( 180deg, rgba(2, 8, 23, 0.95), rgba(3, 15, 35, 1));
+    border-top: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+
+/* ===== GLOW EFFECT ===== */
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 420px;
+    height: 420px;
+    background: rgba(56, 189, 248, 0.08);
+    filter: blur(120px);
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-bottom p {
+    color: #cbd5e1;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .footer {
+    background: linear-gradient( 180deg, #f8fafc, #eef2ff);
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.light-theme .footer-bottom p {
+    color: #334155;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 90px;
+        padding: 35px 15px;
+    }
+    .footer-bottom p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
 }
 
 
