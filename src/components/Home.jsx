@@ -13,16 +13,17 @@ function Home() {
 
         <div className="left">
 
-          <h3>Hello, I'm</h3>
+          <h3>Hello, This is </h3>
 
           <h1>Tanvir Parvez Prottoy</h1>
 
           <h2>Full Stack Developer</h2>
 
-          <p>
+          {/* <p>
             I build modern and responsive websites using
             React, JavaScript, HTML and CSS. 
           </p>
+          */}
 
 
           {/* ===== BUTTONS ===== */}

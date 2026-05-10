@@ -39,13 +39,13 @@ function Testimonials() {
           <div className="testimonial-top">
 
             <div className="testimonial-avatar">
-              MR
+              MH
             </div>
 
             <div className="testimonial-info">
 
               <h3>
-                Mahmud Rahman
+                Mahmudul Hossain
               </h3>
 
               <span>
@@ -80,13 +80,13 @@ function Testimonials() {
           <div className="testimonial-top">
 
             <div className="testimonial-avatar">
-              SR
+              TA
             </div>
 
             <div className="testimonial-info">
 
               <h3>
-                Sadia Rahman
+                Tanjila Ahmmed
               </h3>
 
               <span>
@@ -162,13 +162,13 @@ function Testimonials() {
           <div className="testimonial-top">
 
             <div className="testimonial-avatar">
-              NH
+              TT
             </div>
 
             <div className="testimonial-info">
 
               <h3>
-                Nusrat Hossain
+                Tasnia Tanjim
               </h3>
 
               <span>
@@ -203,13 +203,13 @@ function Testimonials() {
           <div className="testimonial-top">
 
             <div className="testimonial-avatar">
-              RI
+              TH
             </div>
 
             <div className="testimonial-info">
 
               <h3>
-                Rakib Islam
+                Tahmida Oishi
               </h3>
 
               <span>
@@ -285,13 +285,13 @@ function Testimonials() {
           <div className="testimonial-top">
 
             <div className="testimonial-avatar">
-              TM
+              TP
             </div>
 
             <div className="testimonial-info">
 
               <h3>
-                Tamim Mahmud
+                Tayeba Prioty
               </h3>
 
               <span>
@@ -326,13 +326,13 @@ function Testimonials() {
           <div className="testimonial-top">
 
             <div className="testimonial-avatar">
-              SJ
+              AS
             </div>
 
             <div className="testimonial-info">
 
               <h3>
-                Sumaiya Jannat
+                Ayesha Siddika
               </h3>
 
               <span>

@@ -11,9 +11,9 @@ function Services() {
 
         <h4>Services</h4>
 
-        <h1>
-          What I Can Do For You
-        </h1>
+        <h1 className="services-main-title">
+  What I Can Do For You
+</h1>
 
         <p className="section-desc">
 
