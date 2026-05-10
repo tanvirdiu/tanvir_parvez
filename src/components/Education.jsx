@@ -93,7 +93,7 @@ function Education() {
           </p>
 
           <span className="edu-location">
-            Bangladesh
+            Khulna,Bangladesh
           </span>
 
         </div>
@@ -131,7 +131,7 @@ function Education() {
           </p>
 
           <span className="edu-location">
-            Bangladesh
+            Satkhira, Khulna, Bangladesh
           </span>
 
         </div>
