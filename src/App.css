@@ -2399,3 +2399,33 @@ body {
 .light-theme .services-main-title {
     color: #0f172a !important;
 }
+
+
+/* =========================
+   SERVICES TITLE FIX
+========================= */
+
+.services .section-title h2 {
+    color: #ffffff !important;
+}
+
+
+/* LIGHT MODE */
+
+.light-theme .services .section-title h2 {
+    color: #0f172a !important;
+}
+
+
+/* MOBILE FIX */
+
+@media (max-width: 768px) {
+    .services .section-title h2 {
+        color: #ffffff !important;
+        opacity: 1 !important;
+        text-shadow: none;
+    }
+    .light-theme .services .section-title h2 {
+        color: #0f172a !important;
+    }
+}
