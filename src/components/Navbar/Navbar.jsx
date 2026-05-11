@@ -1,7 +1,7 @@
 import './Navbar.css'
 import { useState } from 'react'
 
-import logo from '../../assets/3logo.png'
+import logo from '../../assets/final_logo.png'
 
 function Navbar({ darkMode, setDarkMode }) {
 
