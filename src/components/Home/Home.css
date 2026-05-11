@@ -229,6 +229,36 @@
 
 
 /* =========================
+   TYPING TEXT COLOR
+========================= */
+
+.typing-text,
+.typing-text span,
+.left h2 span {
+    color: white;
+}
+
+
+/* ===== DARK MODE ===== */
+
+.dark-theme .typing-text,
+.dark-theme .typing-text span,
+.dark-theme .left h2 span {
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.12);
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .typing-text,
+.light-theme .typing-text span,
+.light-theme .left h2 span {
+    color: #0f172a;
+}
+
+
+/* =========================
    RESPONSIVE
 ========================= */
 

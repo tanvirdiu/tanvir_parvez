@@ -20,7 +20,7 @@ function Home() {
           <h1>Tanvir Parvez Prottoy</h1>
 
           <h2>
-
+<div className="typing-text">
   <TypeAnimation
 
     sequence={[
@@ -60,6 +60,7 @@ function Home() {
     repeat={Infinity}
 
   />
+  </div>
 
 </h2>
 
