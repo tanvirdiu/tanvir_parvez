@@ -1,0 +1,304 @@
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-section {
+    width: 100%;
+    padding: 15px 8%;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.skills-section .section-title h4 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.skills-section .section-title h2 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-theme .skills-section .section-title h2 {
+    color: #ffffff;
+}
+
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+.light-theme .skills-section .section-title h2 {
+    color: #0f172a;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.skills-desc {
+    max-width: 760px;
+    margin: 22px auto 0;
+    text-align: center;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+.dark-theme .skills-desc {
+    color: #b8c5d6;
+}
+
+.light-theme .skills-desc {
+    color: #475569;
+}
+
+
+/* =========================
+   SKILLS CONTAINER
+========================= */
+
+.skills-container {
+    max-width: 900px;
+    margin: 60px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* =========================
+   SKILL BOX
+========================= */
+
+.skill-progress-box {
+    width: 100%;
+}
+
+
+/* =========================
+   TOP INFO
+========================= */
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.skill-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dark-theme .skill-info h3 {
+    color: #ffffff;
+}
+
+.light-theme .skill-info h3 {
+    color: #0f172a;
+}
+
+.skill-info span {
+    color: #38bdf8;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+.light-theme .progress-bar {
+    background: rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================
+   PROGRESS FILL
+========================= */
+
+.progress-fill {
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient( 90deg, #38bdf8, #0ea5e9);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.45);
+    transition: 1s ease;
+}
+
+
+/* =========================
+   SOFT SKILLS
+========================= */
+
+.soft-skills {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+
+/* =========================
+   SOFT SKILL CARD
+========================= */
+
+.soft-skill-card {
+    padding: 30px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    transition: 0.35s ease;
+}
+
+
+/* =========================
+   DARK CARD
+========================= */
+
+.dark-theme .soft-skill-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+
+/* =========================
+   LIGHT CARD
+========================= */
+
+.light-theme .soft-skill-card {
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.soft-skill-card:hover {
+    transform: translateY(-8px);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.12);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.soft-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 22px;
+    background: linear-gradient( 135deg, rgba(56, 189, 248, 0.18), rgba(14, 165, 233, 0.08));
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+
+/* =========================
+   CARD TITLE
+========================= */
+
+.soft-skill-card h3 {
+    font-size: 22px;
+    margin-bottom: 14px;
+    color: #38bdf8;
+}
+
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.soft-skill-card p {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.dark-theme .soft-skill-card p {
+    color: #cbd5e1;
+}
+
+.light-theme .soft-skill-card p {
+    color: #475569;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 90px 20px;
+    }
+    .skills-section .section-title h2 {
+        font-size: 42px;
+        font-weight: 500;
+        line-height: 1.3;
+    }
+    .skills-desc {
+        font-size: 16px;
+        line-height: 1.9;
+        padding: 0 5px;
+    }
+    .skills-container {
+        margin-top: 50px;
+        gap: 24px;
+    }
+    .skill-info h3 {
+        font-size: 17px;
+    }
+    .progress-bar {
+        height: 12px;
+    }
+    .soft-skills {
+        margin-top: 60px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .soft-skill-card {
+        padding: 28px 22px;
+        border-radius: 22px;
+    }
+    .soft-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 26px;
+    }
+    .soft-skill-card h3 {
+        font-size: 20px;
+    }
+    .soft-skill-card p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}

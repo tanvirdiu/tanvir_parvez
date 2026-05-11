@@ -1,0 +1,56 @@
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-box {
+    padding: 25px;
+    border-left: 4px solid #38bdf8;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.timeline-box:hover {
+    transform: translateX(10px);
+}
+
+.timeline-box {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* LEFT GLOW */
+
+.timeline-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #38bdf8;
+    box-shadow: 0 0 20px #38bdf8;
+    border-radius: 20px;
+}
+
+
+/* RIGHT GLOW */
+
+.timeline-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: #38bdf8;
+    box-shadow: 0 0 20px #38bdf8;
+    border-radius: 20px;
+}

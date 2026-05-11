@@ -1,0 +1,178 @@
+/* =========================
+   TECH MARQUEE SECTION
+========================= */
+
+.tech-marquee {
+    width: 100%;
+    overflow: hidden;
+    padding: 35px 0;
+    position: relative;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-theme .tech-marquee {
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(56, 189, 248, 0.12);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+.light-theme .tech-marquee {
+    background: #ffffff;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================
+   MARQUEE TRACK
+========================= */
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    width: max-content;
+    animation: marqueeMove 24s linear infinite;
+}
+
+
+/* =========================
+   PAUSE ON HOVER
+========================= */
+
+.tech-marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================
+   TECH ITEM
+========================= */
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: max-content;
+    padding: 16px 26px;
+    border-radius: 18px;
+    transition: 0.35s ease;
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================
+   DARK ITEM
+========================= */
+
+.dark-theme .tech-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(56, 189, 248, 0.14);
+}
+
+
+/* =========================
+   LIGHT ITEM
+========================= */
+
+.light-theme .tech-item {
+    background: #f8fafc;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.tech-item:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.dark-theme .tech-item:hover {
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+}
+
+.light-theme .tech-item:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.tech-icon {
+    font-size: 34px;
+    color: #38bdf8;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.tech-item span {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.dark-theme .tech-item span {
+    color: #ffffff;
+}
+
+.light-theme .tech-item span {
+    color: #0f172a;
+}
+
+
+/* =========================
+   MARQUEE ANIMATION
+========================= */
+
+@keyframes marqueeMove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+    .tech-marquee {
+        padding: 28px 0;
+    }
+    .marquee-track {
+        gap: 40px;
+        animation-duration: 18s;
+    }
+    .tech-item {
+        padding: 14px 20px;
+        border-radius: 16px;
+        gap: 10px;
+    }
+    .tech-icon {
+        font-size: 28px;
+    }
+    .tech-item span {
+        font-size: 15px;
+    }
+}

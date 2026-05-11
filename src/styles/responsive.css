@@ -1,0 +1,13 @@
+@media(max-width:1200px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+    }
+}
+
+@media(max-width:768px) {
+    .section-title h2 {
+        font-size: 38px !important;
+    }
+}

@@ -1,0 +1,320 @@
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================
+   FAQ CONTAINER
+========================= */
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* =========================
+   FAQ BOX
+========================= */
+
+.faq-box {
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+
+/* ===== DARK MODE ===== */
+
+.dark-theme .faq-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .faq-box {
+    background: white;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   QUESTION AREA
+========================= */
+
+.faq-question {
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* ===== DARK MODE ===== */
+
+.dark-theme .faq-question h3 {
+    color: white;
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .faq-question h3 {
+    color: #0f172a;
+}
+
+
+/* =========================
+   PLUS ICON
+========================= */
+
+.faq-question span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+
+/* =========================
+   ANSWER
+========================= */
+
+.faq-answer {
+    padding: 0 30px 28px;
+}
+
+.faq-answer p {
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+
+/* ===== DARK MODE ===== */
+
+.dark-theme .faq-answer p {
+    color: #cbd5e1;
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .faq-answer p {
+    color: #475569;
+}
+
+
+/* =========================
+   ASK QUESTION BOX
+========================= */
+
+.ask-question-box {
+    max-width: 750px;
+    margin: 80px auto 0;
+    padding: 40px;
+    border-radius: 28px;
+    text-align: center;
+}
+
+
+/* ===== DARK MODE ===== */
+
+.dark-theme .ask-question-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .ask-question-box {
+    background: white;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.ask-question-box h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== DARK MODE ===== */
+
+.dark-theme .ask-question-box h2 {
+    color: white;
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .ask-question-box h2 {
+    color: #0f172a;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.ask-question-box p {
+    margin-bottom: 25px;
+}
+
+
+/* ===== DARK MODE ===== */
+
+.dark-theme .ask-question-box p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .ask-question-box p {
+    color: #475569;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.ask-question-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.ask-question-box input,
+.ask-question-box textarea {
+    width: 100%;
+    padding: 18px 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ===== DARK MODE ===== */
+
+.dark-theme .ask-question-box input,
+.dark-theme .ask-question-box textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(56, 189, 248, 0.12);
+    color: white;
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .ask-question-box input,
+.light-theme .ask-question-box textarea {
+    background: #f8fafc;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.ask-question-box input::placeholder,
+.ask-question-box textarea::placeholder {
+    color: #64748b;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.ask-question-box textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.ask-question-box button {
+    padding: 18px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.ask-question-box button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.success-msg {
+    margin-top: 20px;
+    color: #38bdf8;
+    font-weight: 500;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px) {
+    .faq-question {
+        padding: 22px;
+    }
+    .faq-answer {
+        padding: 0 22px 24px;
+    }
+    .faq-question h3 {
+        font-size: 16px;
+    }
+    .ask-question-box {
+        padding: 28px;
+    }
+    .ask-question-box h2 {
+        font-size: 28px;
+    }
+}

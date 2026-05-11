@@ -1,0 +1,292 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 18px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(14px);
+    background: rgba(3, 16, 31, 0.82);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease;
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .navbar {
+    background: rgba(255, 255, 255, 0.88);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #38bdf8;
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
+    transition: 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 28px rgba(56, 189, 248, 0.5);
+}
+
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+
+/* ===== HOVER EFFECT ===== */
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* ===== LIGHT MODE ===== */
+
+.light-theme .nav-links a {
+    color: #0f172a;
+}
+
+.light-theme .nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================
+   NAV RIGHT
+========================= */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* =========================
+   THEME TOGGLE
+========================= */
+
+.theme-toggle {
+    width: 62px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(56, 189, 248, 0.18);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.15);
+}
+
+
+/* =========================
+   TOGGLE CIRCLE
+========================= */
+
+.toggle-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translateX(0);
+    transition: 0.35s ease;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
+}
+
+
+/* ===== ACTIVE ===== */
+
+.theme-toggle.active .toggle-circle {
+    transform: translateX(30px);
+}
+
+
+/* ===== ICON ===== */
+
+.toggle-icon {
+    width: 13px;
+    height: 13px;
+}
+
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-btn {
+    display: none;
+    font-size: 32px;
+    color: #38bdf8;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo img {
+        width: 58px;
+        height: 58px;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .nav-right {
+        gap: 14px;
+    }
+    /* ===== MOBILE MENU ===== */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 290px;
+        height: 100vh;
+        padding: 130px 35px;
+        background: rgba(2, 8, 23, 0.97);
+        backdrop-filter: blur(18px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 28px;
+        transition: 0.45s ease;
+        z-index: 1500;
+    }
+    .nav-links.active {
+        left: 0;
+    }
+    .nav-links a {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .nav-links a:hover {
+        padding-left: 8px;
+    }
+    /* ===== LIGHT MODE ===== */
+    .light-theme .nav-links {
+        background: rgba(255, 255, 255, 0.96);
+    }
+    .light-theme .nav-links a {
+        color: #0f172a;
+    }
+    /* ===== TOGGLE ===== */
+    .theme-toggle {
+        width: 58px;
+        height: 30px;
+    }
+    .toggle-circle {
+        width: 22px;
+        height: 22px;
+    }
+    .theme-toggle.active .toggle-circle {
+        transform: translateX(28px);
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 14px 16px;
+    }
+    .logo img {
+        width: 52px;
+        height: 52px;
+    }
+    .menu-btn {
+        font-size: 28px;
+    }
+    .nav-links {
+        width: 260px;
+        padding: 120px 28px;
+    }
+    .nav-links a {
+        font-size: 20px;
+    }
+}

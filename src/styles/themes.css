@@ -1,0 +1,11 @@
+.dark-theme {
+    background: #03101f;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.light-theme {
+    background: #f1f5f9;
+    color: #0f172a;
+    transition: 0.2s ease;
+}

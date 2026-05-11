@@ -1,0 +1,171 @@
+/* =========================
+   VISITOR COUNTER
+========================= */
+
+.visitor-counter {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    z-index: 999;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(15px);
+    transition: 0.35s ease;
+    overflow: hidden;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-theme .visitor-counter {
+    background: rgb(1, 5, 14);
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.14);
+}
+
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+.light-theme .visitor-counter {
+    background: rgba(84, 139, 184, 0.95);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.visitor-counter:hover {
+    transform: translateY(-5px);
+}
+
+.dark-theme .visitor-counter:hover {
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    box-shadow: 0 0 35px rgba(56, 189, 248, 0.2);
+}
+
+.light-theme .visitor-counter:hover {
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.1);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.visitor-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    flex-shrink: 0;
+}
+
+.dark-theme .visitor-icon {
+    background: linear-gradient( 135deg, rgba(56, 189, 248, 0.2), rgba(14, 165, 233, 0.08));
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    color: #38bdf8;
+}
+
+.light-theme .visitor-icon {
+    background: #f1f5f9;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.visitor-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.visitor-label {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    letter-spacing: 0.4px;
+}
+
+.dark-theme .visitor-label {
+    color: #94a3b8;
+}
+
+.light-theme .visitor-label {
+    color: #64748b;
+}
+
+
+/* =========================
+   COUNT
+========================= */
+
+.visitor-count {
+    font-size: 18px;
+    font-weight: 700;
+    color: #38bdf8;
+    line-height: 1;
+}
+
+
+/* =========================
+   GLOW EFFECT
+========================= */
+
+.visitor-counter::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.08);
+    filter: blur(50px);
+    pointer-events: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+    .visitor-counter {
+        left: 14px;
+        bottom: 14px;
+        padding: 12px 18px;
+        gap: 10px;
+    }
+    .visitor-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .visitor-label {
+        font-size: 11px;
+    }
+    .visitor-count {
+        font-size: 16px;
+    }
+}
