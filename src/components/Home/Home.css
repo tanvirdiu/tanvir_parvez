@@ -236,7 +236,7 @@
     .hero-section {
         flex-direction: column;
         text-align: center;
-        gap: 80px;
+        gap: 90px;
     }
 }
 
@@ -244,8 +244,9 @@
     .left h1 {
         font-size: 68px;
     }
-    .left h2 {
-        font-size: 40px;
+    .left h2,
+    .typing-text {
+        font-size: 38px;
     }
     .left p {
         font-size: 17px;
@@ -258,19 +259,21 @@
 
 @media(max-width:768px) {
     .hero-section {
-        padding-top: 130px;
-        gap: 60px;
+        padding: 140px 20px 80px;
+        gap: 65px;
     }
     .left h1 {
-        font-size: 52px;
+        font-size: 54px;
     }
-    .left h2 {
-        font-size: 32px;
+    .left h2,
+    .typing-text {
+        font-size: 30px;
         min-height: auto;
     }
     .left p {
         font-size: 15px;
         line-height: 1.8;
+        margin-bottom: 36px;
     }
     .buttons {
         flex-direction: column;
@@ -279,24 +282,33 @@
     .hire-btn,
     .cv-btn {
         width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
+        max-width: 320px;
+        height: 62px;
+        border-radius: 20px;
+    }
+    .socials {
+        gap: 18px;
+    }
+    .socials a {
+        width: 56px;
+        height: 56px;
     }
     .image-box {
-        width: 300px;
+        width: 310px;
         height: 400px;
     }
 }
 
 @media(max-width:576px) {
     .left h1 {
-        font-size: 42px;
+        font-size: 44px;
     }
-    .left h2 {
+    .left h2,
+    .typing-text {
         font-size: 26px;
     }
     .left h3 {
-        font-size: 22px;
+        font-size: 24px;
     }
     .left p {
         font-size: 14px;
@@ -304,12 +316,11 @@
     .hire-btn,
     .cv-btn {
         height: 58px;
-        font-size: 15px;
-        border-radius: 18px;
+        font-size: 16px;
     }
     .image-box {
-        width: 240px;
-        height: 320px;
-        border-radius: 30px;
+        width: 250px;
+        height: 330px;
+        border-radius: 32px;
     }
 }
